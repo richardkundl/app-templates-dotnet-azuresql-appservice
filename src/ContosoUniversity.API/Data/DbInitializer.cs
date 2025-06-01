@@ -74,8 +74,13 @@ namespace ContosoUniversity.API.Data
                     new StudentCourse
                     {
                         StudentID = i,
-                        CourseID = random.Next(courses.Length)
+                        CourseID = courses[random.Next(courses.Length)].ID
                     });
+            }
+
+            if (!studentCourse.All(sc => courses.Any(c => c.ID == sc.CourseID)))
+            {
+                throw new InvalidOperationException("StudentCourse references non-existing Course");
             }
 
             await context.StudentCourse.AddRangeAsync(studentCourse);
