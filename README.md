@@ -60,7 +60,7 @@ In Codespaces:
     
     This command will prompt you for the following information:
     - `Environment name`: this will be used as a suffix for the resource group that will be created to hold all Azure resources. This name should be unique within your Azure subscription.
-    - `Azure Subscription`: the Azure Subscriptoin your resources will be deployed.
+    - `Azure Subscription`: the Azure Subscription your resources will be deployed.
     - `Azure Location`: The Azure location where your resources will be deployed. 
 
 ### Using GitHub Actions
