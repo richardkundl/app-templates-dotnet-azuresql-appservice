@@ -12,7 +12,7 @@ builder.Services.Configure<CookiePolicyOptions>(options =>
     options.MinimumSameSitePolicy = SameSiteMode.None;
 });
 
-// this environmet is for docker
+// this environment is for docker.
 if (builder.Configuration["URLAPI"] != null)
 {
     builder.Services.AddHttpClient("client", client => { client.BaseAddress = new Uri(builder.Configuration["URLAPI"]); });
