@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ContosoUniversity.XUnitTest
+namespace ContosoUniversity.Test
 {
     [TestClass]
     public class CoursesTest
